@@ -1,0 +1,35 @@
+/* Autor: Cesar Augusto Leon Molina
+Asignatura: Programación IV
+Sexto semestre ingenieria de software
+CIAF Educación Superior*/
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+h1{
+    margin-top: 50px;
+    font-family: 'Press Start 2P';
+}
+
+.container-script{
+    display: flex;
+    width: 45vw;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Press Start 2P';
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 3px 5px black;
+    background-color: cornflowerblue;
+}
+
+.container-script span {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    border-radius: 5px;
+    border-style: double;
+    background-color: darkgoldenrod;
+}
