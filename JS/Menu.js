@@ -11,19 +11,19 @@ switch (option) {
         let numero2 = prompt("Ingresa el segundo numero: ")
 
         if(numero == "" && numero2 == ""){
-            alert("no ha ingresado ningun numero")
+            document.write("no ha ingresado ningun numero");
         }else if(numero % 2 ==0 && numero2 =="" || numero % 2 !=0 && numero2 =="" ){
-            alert("no ingreso el segundo numero")
+            document.write("no ingreso el segundo numero");
         }else if(numero =="" && numero2 % 2 ==0 || numero =="" && numero2 % 2 !=0){
-            alert("no ingreste el primer numero")
+            document.write("no ingreste el primer numero")
         }else if(numero % 2==0 && numero2 % 2==0){
-            alert("ninguno es impar") 
+            document.write("ninguno es impar"); 
         }else if(numero % 2 !=0 && numero2 % 2 !=0){
-            alert("ambos son impares")
+            document.write("ambos son impares");
         }else if(numero % 2 !=0 && numero2 % 2 >=0){
-            alert("el primer numero es impar")
+            document.write("el primer numero es impar");
         }else if (numero % 2 == 0 && numero2 % 2 !=0) {
-            alert("el segundo numero es impar")
+            document.write("el segundo numero es impar");
         }
         break;
     case 2:
