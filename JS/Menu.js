@@ -7,19 +7,23 @@ var option = window.prompt("Bienvenido al menu del Taller 4\n1. Numero impar\n2.
 option = Number(option);
 switch (option) {
     case 1:
-        var num1 = prompt("Ingrese primer numero porfavor ");
-        num1 = Number(num1);
-        var num2 = prompt("Ingrese segundo numero Porfavor "); 
-        num2 = Number(num2);
+        let numero = prompt("Ingresa primer numero: ")
+        let numero2 = prompt("Ingresa el segundo numero: ")
 
-        if ((num1 % 2) != 0  ){
-            document.write("El primer numero "+ num1 + " es impar");
-        }else if((num2 % 2) != 0){
-            document.write("El segundo numero "+ num2 + " es impar");
-        }else if(num1 == "" && num2 == ""){
-            document.write("No has ingresado ningún numero");
-        } else if(num1 !="" && num2 =="" || num2 !="" && num1 == ""){
-            document.write("Solo ingresaste un numero");
+        if(numero == "" && numero2 == ""){
+            alert("no ha ingresado ningun numero")
+        }else if(numero % 2 ==0 && numero2 =="" || numero % 2 !=0 && numero2 =="" ){
+            alert("no ingreso el segundo numero")
+        }else if(numero =="" && numero2 % 2 ==0 || numero =="" && numero2 % 2 !=0){
+            alert("no ingreste el primer numero")
+        }else if(numero % 2==0 && numero2 % 2==0){
+            alert("ninguno es impar") 
+        }else if(numero % 2 !=0 && numero2 % 2 !=0){
+            alert("ambos son impares")
+        }else if(numero % 2 !=0 && numero2 % 2 >=0){
+            alert("el primer numero es impar")
+        }else if (numero % 2 == 0 && numero2 % 2 !=0) {
+            alert("el segundo numero es impar")
         }
         break;
     case 2:
